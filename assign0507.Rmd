@@ -1,0 +1,63 @@
+---
+title: "assignment0507"
+author: "OSCAR"
+date: "2020/5/7"
+output: html_document
+---
+## 基本運算:
+^,**:次方<br>
+%%:餘數<br>
+%/%:除數的整數項
+
+## 數列:
+(start):(over)<br>
+seq(start,over)<br>
+argument:<br>
+  length.out->數列長度<br>
+  by->間距
+
+## 敘述統計:
+mean()<br>
+var()<br>
+
+## 向量:
+c()<br>
+combine:c(v1,v2)<br>
+special function:<br>
+``` {r}
+unique(c(1,3,4,5,7,7,3,5,7,8,7,4,6,3,6))
+table(c(1,3,4,5,7,7,3,5,7,8,7,4,6,3,6))
+a<-c(1,3,5,4,6,7,3)
+b<-c(1,2,5,7,4,7,4)
+c<-a
+d<-a[1:4]
+setdiff(a,b)
+setequal(a,b)
+setequal(a,c)
+setequal(a,d)
+sort(a,decreasing = TRUE)
+```
+
+## 文字向量:
+``` {r}
+t<-"ha ha it's me！"
+
+strsplit(t," ")
+toupper(t)
+tolower(t)
+substr(t,1,5)
+grep("h",t)
+```
+
+## 矩陣:
+合併row:rbind()<br>
+合併column:cbind()<br>
+matrix()
+
+## 當你不知道這個function的功能:
+type ?func
+
+## 跟python的差異:
+"->" = "="
+(指定的概念吧我猜)
+
